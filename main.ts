@@ -1,8 +1,12 @@
-// news-image-20261118 entry: "The World Today" — a newspaper-front-page
-// poster summing up Wednesday 18 November 2026 in one image (41 stories,
-// 6 continents). The poster is drawn programmatically (Python PIL) so every
-// headline is perfectly legible; this program only copies the finished
-// image beside it to the grader's output directory, deterministically.
+// news-image-20261118 entry, ROUND 2: "The World Today" — a newspaper-front-page
+// poster summing up Wednesday 18 November 2026 in one image (35 stories,
+// 6 continents). Round 2 rebuilds the poster from this competition's own
+// top-10 consensus (story selection and order, not format): 3 hero stories,
+// 9 featured stories in consensus order, 23 more in ALSO ON, a world map
+// with numbered dots, and a BY THE NUMBERS strip. The poster is drawn
+// programmatically (Python PIL) so every headline is perfectly legible;
+// this program only copies the finished image beside it to the grader's
+// output directory, deterministically.
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
